@@ -32,6 +32,8 @@
 (setq org-roam-directory org-directory)
 (setq default-directory org-directory)
 
+(add-hook 'org-mode-hook 'org-fragtog-mode)
+
 (after! org
   (setq org-capture-templates
              '(("t" "Todo" entry
